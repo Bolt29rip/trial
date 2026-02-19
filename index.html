@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Happy 19th Anniversary</title>
 
 <link rel="stylesheet" href="style.css">
@@ -11,31 +10,35 @@
 
 <body>
 
-<!-- INTRO SCREEN -->
+<!-- PREMIUM INTRO -->
 <div id="intro">
+<div class="intro-hearts"></div>
 <h1>❤️ 19 Years of Love ❤️</h1>
 <p>Click Anywhere to Begin</p>
 </div>
 
+<!-- MUSIC -->
 <audio id="bgMusic" loop>
 <source src="music.mp3" type="audio/mpeg">
 </audio>
 
+<!-- BACKGROUND HEARTS -->
 <div class="hearts"></div>
 
-<!-- MAIN CONTENT -->
 <div id="mainContent">
 
 <header class="hero">
 <h1 class="main-title">Happy 19th Anniversary!</h1>
-<p class="subtitle">
-Celebrating love, laughter and togetherness.
-</p>
+<p>Celebrating love, laughter and togetherness.</p>
 </header>
 
-<!-- SLIDESHOW -->
+<!-- VIDEO MEMORY -->
 <section class="slideshow">
-<img id="slideImage" src="wedding.jpg">
+
+<video autoplay loop muted playsinline controls>
+<source src="https://ecardify.com/mmd/d9a7db62-eaa1-4bd6-b276-b798c1146b49/3726/8b8a644b-a48e-4640-8fa8-d4bd3e7465e8/H264-AAC.mp4" type="video/mp4">
+</video>
+
 </section>
 
 <!-- GALLERY -->
@@ -70,7 +73,7 @@ Celebrating love, laughter and togetherness.
 
 <p>
 19 years of love, sacrifices and endless support.
-You taught us what true partnership means.
+You showed us what true partnership means.
 Thank you for filling our lives with happiness.
 </p>
 
@@ -84,5 +87,6 @@ Thank you for filling our lives with happiness.
 <canvas id="confetti"></canvas>
 
 <script src="script.js"></script>
+
 </body>
 </html>
