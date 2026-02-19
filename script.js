@@ -1,4 +1,21 @@
-﻿/* INTRO + MUSIC */
+/* INTRO HEARTS */
+
+const introHeartContainer=document.querySelector(".intro-hearts");
+
+function createIntroHeart(){
+const heart=document.createElement("span");
+heart.innerHTML="💖";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(18+Math.random()*20)+"px";
+heart.style.animationDuration=(5+Math.random()*4)+"s";
+introHeartContainer.appendChild(heart);
+setTimeout(()=>heart.remove(),8000);
+}
+
+setInterval(createIntroHeart,350);
+
+
+/* INTRO + MUSIC */
 
 const intro=document.getElementById("intro");
 const main=document.getElementById("mainContent");
@@ -16,7 +33,7 @@ startConfetti();
 });
 
 
-/* FLOATING HEARTS */
+/* BACKGROUND HEARTS */
 
 const heartContainer=document.querySelector(".hearts");
 
@@ -33,24 +50,7 @@ setTimeout(()=>heart.remove(),10000);
 setInterval(createHeart,400);
 
 
-/* SLIDESHOW */
-
-const images=[
-"wedding.jpg",
-"family.jpg",
-"anniversary.jpg"
-];
-
-let index=0;
-const slide=document.getElementById("slideImage");
-
-setInterval(()=>{
-index=(index+1)%images.length;
-slide.src=images[index];
-},4000);
-
-
-/* CONFETTI EFFECT */
+/* CONFETTI */
 
 function startConfetti(){
 const canvas=document.getElementById("confetti");
